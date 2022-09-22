@@ -1,0 +1,131 @@
+@media (max-width: 940px) {
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+  .topnav-profileName {
+    flex: 8;
+  }
+  .topnav-button {
+    flex: 4;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+  .container {
+    /* overflow: hidden;
+    transform: translateX(-300px); */
+    width: calc(100% + 300px);
+    transition: transform 0.2s ease-out;
+  }
+  .container > .left {
+    min-width: 300px;
+  }
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: var(--background-primary);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--grey-light);
+    left: 20px;
+    top: 20px;
+  }
+  .menu-toggle div {
+    width: 28px;
+    height: 2.3px;
+    background-color: #555;
+    margin: 4.5px 0;
+  }
+  .topnav-profileName {
+    flex: 8;
+  }
+  .topnav-button {
+    flex: 4;
+  }
+  .file-button {
+    width: 100% !important;
+  }
+  .profile-name {
+    margin-left: 7rem;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  .container {
+    /* overflow: hidden; */
+    transform: translateX(-300px);
+    width: calc(100% + 110px);
+    transition: transform 0.2s ease-out;
+  }
+  .topnav-profileName {
+    flex: 6;
+  }
+  .top-nav {
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 2rem;
+  }
+  .topnav-button {
+    flex: 6;
+    width: 60%;
+  }
+  .file-button {
+    width: 100% !important;
+  }
+  /* .profile-name{
+        display: none;
+      } */
+  .form-container {
+    padding: 2rem;
+  }
+  .main-content {
+    margin: 1rem;
+  }
+  .form-input {
+    align-items: flex-start;
+  }
+  .formInput-name {
+    width: 20%;
+  }
+  .form-fields {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+  }
+}

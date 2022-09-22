@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0" />
+    <title>Creator</title>
+    <meta name="title" content="Creator" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <img src="./assets/logo.jpg" alt="logo" class="logo-img" />
+                <div class="Sidenav-btncontainer" id="sidenav">
+                    <button class="sidenavBtn sidenavBtn-active" onclick="changeSection(event, 'form')"
+                        id="defaultOpen">
+                        <i class="ri-article-line"></i> Form
+                    </button>
+                    <button class="sidenavBtn" onclick="changeSection(event, 'report')">
+                        <i class="ri-pie-chart-2-line"></i> Report
+                    </button>
+                    <button class="sidenavBtn">
+                        <i class="ri-dashboard-line"></i> Dashboard
+                    </button>
+                    <button class="sidenavBtn"><i class="ri-user-line"></i>User</button>
+                    <button class="sidenavBtn">
+                        <i class="ri-line-chart-line"></i>Statistics
+                    </button>
+                    <button class="sidenavBtn">
+                        <i class="ri-settings-2-line"></i>Settings
+                    </button>
+                    <button class="sidenavBtn">
+                        <i class="ri-questionnaire-line"></i>Help
+                    </button>
+                    <button class="sidenavBtn"> <i class="ri-login-box-line"></i>Logout </button>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="top-nav">
+                <div class="topnav-profileName">
+                    <h3 class="profile-name">Sanjai personal info</h3>
+                </div>
+                <div class="topnav-button">
+                    <div class="nav-search"><i class="ri-search-line"></i></div>
+                    <div class="nav-notification">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <button class="ghost-button">
+                        <i class="ri-edit-2-line"></i>Edit
+                    </button>
+                    <div class="user-avatar">
+                        <img class="avatar" src="./assets/male.png" alt="profile-img" />
+                        <div class="status-overlay">
+                            <div class="active-icon"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <!-- FORM SECTION -->
+                <div class="form-container tabcontent" id="form">
+                    <h2 class="primary-heading">
+                        <i class="ri-article-line"></i> Form
+                    </h2>
+                    <div class="form-inputs">
+                        <div class="form-input">
+                            <div class="formInput-name">
+                                <h3 class="input-name">Name</h3>
+                            </div>
+                            <div class="form-fields">
+                                <div class="input-group">
+                                    <input id="firstname" required="" type="text" name="text" autocomplete="off"
+                                        class="input" placeholder="ex:sanjai" />
+                                    <label class="user-label">First Name</label>
+                                    <i class="fa-solid fa-user inputIcon"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input id="lastname" required="" type="text" name="text" autocomplete="off"
+                                        class="input" placeholder="ex:sanjai" />
+                                    <label class="user-label">Last Name</label>
+                                    <i class="fa-solid fa-user inputIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-input">
+                            <div class="formInput-name">
+                                <h3 class="input-name">Email</h3>
+                            </div>
+                            <div class="form-fields">
+                                <div class="input-group">
+                                    <input id="mail" required="" type="text" name="text" autocomplete="off"
+                                        class="input" placeholder="ex:@gmail.com" />
+                                    <label class="user-label">Mail</label>
+                                    <i class="fa-solid fa-envelope inputIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-input">
+                            <div class="formInput-name">
+                                <h3 class="input-name">Phone</h3>
+                            </div>
+                            <div class="form-fields">
+                                <div class="input-group">
+                                    <input id="phone" required="true" type="number" name="text" autocomplete="off"
+                                        class="input" placeholder="ex:9876543210" />
+                                    <label class="user-label">Phone Number</label>
+                                    <i class="fa-solid fa-phone inputIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-input">
+                            <div class="formInput-name">
+                                <h3 class="input-name">Gender</h3>
+                            </div>
+                            <div class="form-fields">
+                                <div class="radio-group">
+
+                                    <label for="gender" class="gender-radio">
+                                        <input type="radio" id="gender" name="gender" value="male" aria-label="radio"
+                                            checked />
+                                        Male
+                                    </label><label for="gender" class="gender-radio">
+                                        <input type="radio" id="gender" name="gender" value="female"
+                                            aria-label="radio" />
+                                        Female
+                                    </label>
+                                    <label for="gender" class="gender-radio">
+                                        <input type="radio" id="gender" name="gender" value="others"
+                                            aria-label="radio" />
+                                        others
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-input flex-start">
+                            <div class="formInput-name">
+                                <h3 class="input-name">Address</h3>
+                            </div>
+                            <div class="form-fields">
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="on" class="input"
+                                        placeholder="ex:79,anna nagar" id="address" />
+                                    <label class="user-label">Address line 1</label>
+                                    <i class="fa-solid fa-location-dot inputIcon"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" class="input"
+                                        placeholder="ex:chennai" id="city" />
+                                    <label class="user-label">City/District</label>
+                                    <i class="fa-solid fa-map inputIcon"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" class="input"
+                                        placeholder="ex:tamilnadu" id="state" />
+                                    <label class="user-label">State/Province</label>
+                                    <i class="fa-solid fa-location-crosshairs inputIcon"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" class="input"
+                                        placeholder="ex:799 084" id="postalcode" />
+                                    <label class="user-label">Postal Code</label>
+                                    <i class="fa-solid fa-house-user inputIcon"></i>
+                                </div>
+                                <div class="input-group">
+                                    <input required="" type="text" name="text" autocomplete="off" class="input"
+                                        placeholder="ex:india" id="country" />
+                                    <label class="user-label">Country</label>
+                                    <i class="fa-solid fa-flag inputIcon"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-input">
+                            <div class="formInput-name">
+                                <h3 class="input-name">Image</h3>
+                            </div>
+                            <div class="form-fields">
+                                <div class="input-group">
+                                    <!-- <label for="myfile">Select a file:</label> -->
+                                    <div class="file-button">
+                                        <input type="file" id="myfile" name="myfile" class="file-button"
+                                            style="display: none" />
+                                        <label for="myfile" class="file-text"><i
+                                                class="fa-solid fa-upload file-icon"></i><span class="primary">Click to
+                                                upload</span> or drag
+                                            and drop SVG,PNG,JPG or Gif</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="submit-button" onclick="getData()">Submit</button>
+                    <button class="reset-button" onclick="reset()">Reset</button>
+                    <div id="errormessage"></div>
+                    <div id="successmessage"></div>
+                </div>
+                <!-- REPORT SECTION -->
+                <div class="tab-container tabcontent" id="report">
+                    <div class="table-actions">
+                        <div>
+                            <h2 class="primary-heading">
+                                <i class="ri-article-line"></i> Report
+                            </h2>
+                        </div>
+                        <div class="table-buttons">
+                            <div class=""><i class="fa-solid fa-plus action-button"></i></div>
+                            <div><i class="fa-solid fa-arrow-up-wide-short sort-button"></i></div>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <div  style="overflow-x:auto !important;">
+                            <table id="personDetail">
+                                <thead>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th></th>
+                                </thead>
+                                <!-- <tr class="table-row">
+                                    <td>
+                                        <div class="name-cell">
+                                            <img src="./assets/profile.png" class="table-profile" alt="profile-img" />
+                                            <h4 class="name-typo">Arun Prasad</h4>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="male"></div>Male
+                                    </td>
+                                    <td>arunprasadvel21@gmail.com</td>
+                                    <td>9789198372 </td>
+                                    <td class="cell-link">View detail<i class="fa-solid fa-arrow-right"></i></td>
+                                </tr> -->
+                            </table>
+                            <div id="tableerror"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>
